@@ -1,142 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Deborah Boyo - DevOps Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <title>DevOps Portfolio - Deborah Boyo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #fdfaf6; /* Cream background */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #40e0d0; /* turquoise blue */
       color: #333;
     }
-
     .header {
-      background-color: #4b2e2e; /* Deep brown */
+      background-color: #001f3f; /* navy blue */
       color: white;
+      padding: 30px;
       text-align: center;
-      padding: 40px 20px;
     }
-
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      object-fit: cover;
+      border: 3px solid #fff;
+    }
     .header h1 {
       margin: 0;
-      font-size: 2.8em;
+      font-size: 2.5em;
+      font-family: 'Pacifico', cursive;
+      font-weight: bold;
     }
-
-    .header p {
-      font-size: 1.2em;
-      color: #e0e0e0;
-    }
-
     .container {
-      max-width: 960px;
-      margin: 40px auto;
-      padding: 30px;
-      background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
-
     h2 {
-      color: #6a0dad; /* Purple */
-      border-bottom: 2px solid #dcdcdc;
-      padding-bottom: 6px;
-      margin-top: 40px;
+      color: #5D3A00; /* deep brown */
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 5px;
     }
-
     ul {
-      list-style: none;
+      list-style-type: none;
       padding-left: 0;
     }
-
     ul li {
-      background-color: #f5f5f5;
-      margin: 10px 0;
-      padding: 12px;
-      border-left: 5px solid #008080; /* Teal green */
-      border-radius: 6px;
+      background-color: #f7fafc;
+      margin: 8px 0;
+      padding: 10px;
+      border-left: 5px solid #5D3A00; /* deep brown */
+      border-radius: 5px;
     }
-
-    .contact p, a {
-      font-size: 1em;
-      color: #007c91; /* Turquoise blue */
+    a {
+      color: #3182ce;
+      text-decoration: none;
     }
-
     a:hover {
       text-decoration: underline;
     }
-
-    .section p {
-      font-size: 1.05em;
-      line-height: 1.6;
-    }
-
     .footer {
       text-align: center;
-      margin: 40px 0 20px;
+      padding: 20px;
       font-size: 0.9em;
-      color: grey;
+      color: #f0fff4;
     }
   </style>
 </head>
 <body>
+
   <div class="header">
-    <h1>Deborah Boyo</h1>
-    <p>DevOps Engineer | Cloud | CI/CD | Automation</p>
+    <div class="header-content">
+      <!-- Make sure profile.jpg is in the same folder as index.html -->
+      <img src="profile.jpg" alt="Deborah Boyo">
+      <div>
+        <h1>Deborah Boyo</h1>
+        <p>DevOps Engineer | Cloud | CI/CD | Automation</p>
+      </div>
+    </div>
   </div>
 
   <div class="container">
-    <div class="section">
-      <h2>About Me</h2>
-      <p>
-        I’m a passionate DevOps engineer with experience in automation, cloud infrastructure, and containerization. I enjoy building efficient CI/CD pipelines and working with cloud-native technologies to ensure seamless deployments and operations.
-      </p>
-    </div>
+    <h2>About Me</h2>
+    <p>I’m a passionate DevOps engineer with experience in automation, cloud infrastructure, and containerization. I
+      enjoy building efficient CI/CD pipelines and working with cloud-native technologies.</p>
 
-    <div class="section">
-      <h2>Skills</h2>
-      <ul>
-        <li>Docker & Kubernetes</li>
-        <li>AWS, Azure, GCP</li>
-        <li>Terraform & CloudFormation</li>
-        <li>CI/CD with Jenkins & GitHub Actions</li>
-        <li>Monitoring: Prometheus, Grafana</li>
-      </ul>
-    </div>
+    <h2>Skills</h2>
+    <ul>
+      <li>Docker & Kubernetes</li>
+      <li>AWS, Azure, GCP</li>
+      <li>Terraform & CloudFormation</li>
+      <li>CI/CD with Jenkins & GitHub Actions</li>
+      <li>Monitoring: Prometheus, Grafana</li>
+    </ul>
 
-    <div class="section">
-      <h2>Certifications</h2>
-      <ul>
-        <li>AWS Certified Solutions Architect</li>
-        <li>Certified Kubernetes Administrator (CKA)</li>
-        <li>CompTIA Security+</li>
-      </ul>
-    </div>
+    <h2>Certifications</h2>
+    <ul>
+      <li>AWS Certified Solutions Architect</li>
+      <li>Certified Kubernetes Administrator (CKA)</li>
+      <li>CompTIA Security+</li>
+    </ul>
 
-    <div class="section">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>CI/CD Pipeline:</strong> Automated Dockerized app deployments using Jenkins and GitHub Webhooks.</li>
-        <li><strong>K8s Deployment:</strong> Hosted scalable web apps on Kubernetes with Helm.</li>
-        <li><strong>Infra as Code:</strong> Created reusable Terraform modules for cloud environments.</li>
-      </ul>
-    </div>
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>CI/CD Pipeline:</strong> Automated Dockerized app deployments using Jenkins and GitHub Webhooks</li>
+      <li><strong>K8s Deployment:</strong> Hosted scalable web apps on Kubernetes with Helm</li>
+      <li><strong>Infra as Code:</strong> Created reusable Terraform modules for cloud environments</li>
+    </ul>
 
-    <div class="section contact">
-      <h2>Contact</h2>
-      <p>Email: boyodebby@gmail.com</p>
-      <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/deborah-boyo-b6b434248" target="_blank">
-          linkedin.com/in/deborah-boyo-b6b434248
-        </a>
-      </p>
-    </div>
+    <h2>Contact</h2>
+    <p>Email: boyodebby@gmail.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/deborah-boyo-b6b434248" target="_blank">linkedin.com/in/deborah-boyo</a></p>
   </div>
 
   <div class="footer">
     &copy; 2025 Deborah Boyo. All rights reserved.
   </div>
+
 </body>
 </html>

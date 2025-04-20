@@ -1,43 +1,38 @@
-# Deborah-B-portfolio
 # DevOps Portfolio - Deborah Boyo
 
-## Description
-This is a redesigned DevOps portfolio page built using HTML and CSS, reflecting my personal brand using a formal and modern style. It is hosted as a static site on AWS S3.
+## Overview
+This is a static portfolio website designed to showcase my skills, certifications, projects, and contact information as a DevOps Engineer.
 
-## Customization and Changes Made
+## Customizations Made
 
-1. **Personalization**:
-   - Updated with my name: **Deborah Boyo**
-   - Email: **boyodebby@gmail.com**
-   - LinkedIn: [linkedin.com/in/deborah-boyo-b6b434248](https://www.linkedin.com/in/deborah-boyo-b6b434248)
+1. **Name, Email, LinkedIn**
+   - Replaced template name with "Deborah Boyo"
+   - Updated email to boyodebby@gmail.com
+   - Added LinkedIn link: linkedin.com/in/deborah-boyo
 
-2. **Design Customization**:
-   - Implemented my brand colors:
-     - **Deep Brown** for header
-     - **Cream** for background
-     - **Purple/Lilac** for section headers
-     - **Teal green / Turquoise blue** for borders and links
-     - **Grey/White** for body and text contrasts
-     - **Yellow** used subtly for highlight accents
-   - Used soft shadowed cards for clean presentation.
+2. **Header Design**
+   - Added a circular professional profile image on the left
+   - Header background changed to **navy blue**
+   - Font style changed to a **handwritten cursive font** (Google Font: Pacifico)
+   - Made the header font bold
 
-3. **Typography**:
-   - Used **Inter**, a clean and modern Google Font.
+3. **Body Background**
+   - Changed body background to **turquoise blue**
 
-4. **Layout**:
-   - Centered, boxed layout with spacing and rounded corners.
-   - Well-organized sections with clear headers and spacing.
+4. **Color Scheme**
+   - Replaced old turquoise accent with **deep brown**
+   - Accent used on section headers and left border of list items
 
-5. **Responsiveness**:
-   - The design is clean and readable on desktops and tablets.
+5. **Layout Improvements**
+   - Used Flexbox in header for better image/text alignment
+   - Ensured layout is responsive and visually appealing
 
-## Deployment
-This HTML file is ready for static hosting on an S3 bucket with:
-- Static website hosting enabled
-- `index.html` as the default document
-- Bucket policy applied for public access
-- Lifecycle rules and optional DNS customization
+## Files Included
+- index.html
+- profile.jpg (user image)
+- README.txt
 
-## Author
-**Deborah Boyo**  
-DevOps Engineer | CI/CD | Cloud | Infrastructure as Code
+## Hosting
+This website is hosted on an AWS S3 bucket with static website hosting enabled and public access via bucket policy.
+
+---
